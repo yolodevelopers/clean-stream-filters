@@ -1,0 +1,51 @@
+title
+test1
+type
+0
+category
+test
+description
+This is a test filter.
+startTime
+3
+endTime
+8
+
+title
+test2
+type
+1
+category
+test
+description
+This is a test filter.
+startTime
+10
+endTime
+15
+
+title
+test3
+type
+0
+category
+test
+description
+This is a test filter.
+startTime
+20
+endTime
+35
+
+title
+test4
+type
+1
+category
+test
+description
+This is a test filter.
+startTime
+37
+endTime
+39
