@@ -6,6 +6,7 @@ This repository contains filters for editing movies for innapropriate content. T
 
 The .filter files are simple text files with the following layout:
 
+```
 title //this signifies that the title of the filter is on the following line
 filter1 //this is the title of the filter
 type //this signifies that the type of the filter is on the following line
@@ -31,4 +32,4 @@ startTime
 10
 endTime
 15
-
+```
