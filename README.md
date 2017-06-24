@@ -33,3 +33,11 @@ startTime
 endTime
 15
 ```
+
+## Retrieving and Parsing the Filters
+
+```javascript
+getFilters = function (url) {
+	
+}
+```
