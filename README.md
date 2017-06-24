@@ -58,7 +58,6 @@ parseFilterFileContent = function (ffc) {
 	var lines = ffc.split("\n");
 	
 	var filters = new Array();
-	var value = false;
 	var l = 0;
 	var filter = new Object;
 	while (l<lines.length) {
