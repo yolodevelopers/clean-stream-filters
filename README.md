@@ -37,7 +37,46 @@ endTime
 ## Retrieving and Parsing the Filters
 
 ```javascript
-getFilters = function (url) {
-	
+getFilterFileContent = function (url, callback) {
+	//get the contents of the file
+	var request = new XMLHttpRequest();
+	request.open('GET', url, true);
+	request.send(null);
+	request.onreadystatechange = function () {
+		if (request.readyState === 4 && request.status === 200) {
+			var type = request.getResponseHeader('Content-Type');
+			if (type.indexOf("text") !== 1) {
+				//calls the specified callback method and passes the content of the filter file as a string
+				callback(request.responseText);
+			}
+		}
+	}
 }
+
+parseFilterFileContent = function (ffc) {
+	//get an array containing each line
+	var lines = ffc.split("\n");
+	
+	var filters = new Array();
+	var value = false;
+	var l = 0;
+	var filter = new Object;
+	while (l<lines.length) {
+		if (lines[l]!=="") {
+			filter[lines[l++]] = lines[l++];
+		}
+		else {
+			filters.push(filter);
+			filter = new Object;
+			l++;
+		}
+	}
+	
+	//returns the filters as an array
+	return filters;
+}
+
+getFilterFileContent("https://raw.githubusercontent.com/yolodevelopers/clean-stream-filters/master/test.filter", function (ffc) {
+	var filters = parseFilterFileContent(ffc);
+});
 ```
