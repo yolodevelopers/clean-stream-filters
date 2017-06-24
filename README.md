@@ -36,6 +36,8 @@ endTime
 
 ## Retrieving and Parsing the Filters
 
+Below are some functions in javascript that will get a filter file and parse it into an array of objects.
+
 ```javascript
 getFilterFileContent = function (url, callback) {
 	//get the contents of the file
@@ -74,8 +76,53 @@ parseFilterFileContent = function (ffc) {
 	//returns the filters as an array
 	return filters;
 }
+```
 
+The code below uses the two functions above and prints the results to the console.
+
+```javascript
 getFilterFileContent("https://raw.githubusercontent.com/yolodevelopers/clean-stream-filters/master/test.filter", function (ffc) {
 	var filters = parseFilterFileContent(ffc);
+	console.log(filters);
 });
+```
+
+The printed result of the code above should look something like the following:
+
+```
+(4) [Object, Object, Object, Object]
+0:Object
+category:"test"
+description:"This is a test filter."
+endTime:"8"
+startTime:"3"
+title:"test filter1"
+type:"0"
+__proto__:Object
+1:Object
+category:"test"
+description:"This is a test filter."
+endTime:"15"
+startTime:"10"
+title:"test filter2"
+type:"1"
+__proto__:Object
+2:Object
+category:"test"
+description:"This is a test filter."
+endTime:"35"
+startTime:"20"
+title:"test filter3"
+type:"0"
+__proto__:Object
+3:Object
+category:"test"
+description:"This is a test filter."
+endTime:"39"
+startTime:"37"
+title:"test filter4"
+type:"1"
+__proto__:Object
+length:4
+__proto__:Array(0)
 ```
