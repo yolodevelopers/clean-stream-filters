@@ -1,6 +1,6 @@
 # clean-stream-filters
 
-This repository contains filters for editing movies for innapropriate content. These filters are designed to be used with the chrome extension Clean Stream but can be used freely by other filtering services.
+This repository contains filters for editing movies for innapropriate content. These filters are designed to be used with the chrome extension [Clean Stream](https://chrome.google.com/webstore/detail/clean-stream/cppacmdbokpnibcconbcniibodcfgdba) but can be used freely by other filtering services.
 
 ## The .filter File Format
 
