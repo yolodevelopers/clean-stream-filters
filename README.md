@@ -64,9 +64,11 @@ parseFilterFileContent = function (ffc) {
 	var filter = new Object;
 	while (l<lines.length) {
 		if (lines[l]!=="") {
+			//adds a property to the filter with its value
 			filter[lines[l++]] = lines[l++];
 		}
 		else {
+			//adds the filter to the array of filters and resets the filter variable
 			filters.push(filter);
 			filter = new Object;
 			l++;
