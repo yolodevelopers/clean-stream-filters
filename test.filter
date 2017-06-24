@@ -1,5 +1,5 @@
 title
-test1
+test filter1
 type
 0
 category
@@ -12,7 +12,7 @@ endTime
 8
 
 title
-test2
+test filter2
 type
 1
 category
@@ -25,7 +25,7 @@ endTime
 15
 
 title
-test3
+test filter3
 type
 0
 category
@@ -38,7 +38,7 @@ endTime
 35
 
 title
-test4
+test filter4
 type
 1
 category
