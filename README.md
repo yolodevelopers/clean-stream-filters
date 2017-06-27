@@ -80,7 +80,7 @@ parseFilterFileContent = function (ffc) {
 }
 ```
 
-The code below uses the two functions above and prints the results to the console.
+The code below uses the two functions above and prints the results to the console in chrome.
 
 ```javascript
 getFilterFileContent("https://raw.githubusercontent.com/yolodevelopers/clean-stream-filters/master/test.filter", function (ffc) {
