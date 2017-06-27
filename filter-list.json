@@ -1,18 +1,14 @@
 {
 	"filters": [
 		{
-			"test": [
-				"url": "https://raw.githubusercontent.com/yolodevelopers/clean-stream-filters/master/test.filter", 
-				"filename": "test.filter", 
-				"title": "Test"
-			]
+			"url": "https://raw.githubusercontent.com/yolodevelopers/clean-stream-filters/master/test.filter", 
+			"filename": "test.filter", 
+			"title": "Test"
 		}, 
 		{
-			"test-2": [
-				"url": "https://raw.githubusercontent.com/yolodevelopers/clean-stream-filters/master/test-2.filter", 
-				"filename": "test2.filter", 
-				"title": "Test 2"
-			]
+			"url": "https://raw.githubusercontent.com/yolodevelopers/clean-stream-filters/master/test-2.filter", 
+			"filename": "test2.filter", 
+			"title": "Test 2"
 		}
 	]
 }
