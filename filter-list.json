@@ -1,6 +1,14 @@
 {
 	"filters": [
-		"test.filter", 
-		"test2.filter"
+		"test": [
+			"url": "/test.filter", 
+			"filename": "test.filter", 
+			"title": "Test"
+		], 
+		"test-2": [
+			"url": "/test-2.filter", 
+			"filename": "test2.filter", 
+			"title": "Test 2"
+		]
 	]
 }
