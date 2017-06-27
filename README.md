@@ -10,7 +10,7 @@ The .filter files are simple text files with the following layout:
 title //this signifies that the title of the filter is on the following line
 filter1 //this is the title of the filter
 type //this signifies that the type of the filter is on the following line
-0 //this is the type of filter1. The type can be either 0 (audio) or 1 (audio visual)
+audio //this is the type of filter1. The type can be either "audio" or "audiovisual"
 category //this signifies that the category of the filter is on the following line
 test //this is the category of filter1
 description //this signifies that the description of the filter is on the following line
@@ -23,7 +23,7 @@ endTime //this signifies that the endTime of the filter is on the following line
 title //the above space signifies that the first filter is defined and the next filter has now being defined
 filter2
 type
-1
+audiovisual
 category
 test
 description
