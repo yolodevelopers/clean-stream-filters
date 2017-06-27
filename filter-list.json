@@ -1,12 +1,12 @@
 {
 	"filters": [
 		"test": [
-			"url": "/test.filter", 
+			"url": "https://raw.githubusercontent.com/yolodevelopers/clean-stream-filters/master/test.filter", 
 			"filename": "test.filter", 
 			"title": "Test"
 		], 
 		"test-2": [
-			"url": "/test-2.filter", 
+			"url": "https://raw.githubusercontent.com/yolodevelopers/clean-stream-filters/master/test-2.filter", 
 			"filename": "test2.filter", 
 			"title": "Test 2"
 		]
