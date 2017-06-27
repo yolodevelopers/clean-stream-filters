@@ -1,6 +1,5 @@
 {
-	"filters": 
-	[
+	"filters": [
 		"test.filter", 
 		"test2.filter"
 	]
