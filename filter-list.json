@@ -3,12 +3,12 @@
 		{
 			"url": "https://raw.githubusercontent.com/yolodevelopers/clean-stream-filters/master/test.filter", 
 			"filename": "test.filter", 
-			"title": "Test"
+			"title_variants": ["Test", "test"]
 		}, 
 		{
 			"url": "https://raw.githubusercontent.com/yolodevelopers/clean-stream-filters/master/test-2.filter", 
 			"filename": "test2.filter", 
-			"title": "Test 2"
+			"title_variants": ["Test 2", "test 2", "Test2", "test2"]
 		}
 	]
 }
