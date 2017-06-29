@@ -20,7 +20,7 @@ startTime //this indicates that the startTime of the filter is on the following 
 endTime //this indicates that the endTime of the filter is on the following line
 8 //this is the end time of filter1
 
-title //the above space indicates that the first filter is defined and the next filter has now being defined
+title //the above empty line indicates that the first filter is defined and the next filter has now being defined
 filter2
 type
 audiovisual
