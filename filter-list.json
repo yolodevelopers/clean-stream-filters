@@ -3,17 +3,18 @@
 		{
 			"url": "https://raw.githubusercontent.com/yolodevelopers/clean-stream-filters/master/test.filter", 
 			"filename": "test.filter", 
-			"title_variants": ["Test", "test"]
+			"title": "Test"
 		}, 
 		{
 			"url": "https://raw.githubusercontent.com/yolodevelopers/clean-stream-filters/master/test-2.filter", 
 			"filename": "test2.filter", 
-			"title_variants": ["Test 2", "test 2", "Test2", "test2"]
+			"title": "Test 2"
 		},
 		{
 			"url": "https://raw.githubusercontent.com/yolodevelopers/clean-stream-filters/master/a-study-in-pink.filter", 
 			"filename": "a-study-in-pink.filter", 
-			"title_variants": ["A Study in Pink", "a study in pink", "70174779"]
+			"title": "A Study in Pink"
+			"netflix_id": "70174779"
 		}
 	]
 }
