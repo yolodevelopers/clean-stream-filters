@@ -6,15 +6,15 @@ These filters are designed to be used with the Chrome extension [Clean Stream](h
 
 ## Using the Filters
 
-#### Available Filtering Services
+### Available Filtering Services
 
 The filters can be used to edit inappropriate content out of movies through services such as Chrome extensions. Currently, these filters are being used by the Chrome extension [Clean Stream](https://chrome.google.com/webstore/detail/clean-stream/cppacmdbokpnibcconbcniibodcfgdba) which can apply the filters to Netflix.
 
-#### Creating a Filtering Service
+### Creating a Filtering Service
 
 Others are welcome to create filtering services that use these filters. The following information shows how to use the filters.
 
-###### The Filter List
+#### The Filter List
 
 The file [filter-list.json](https://raw.githubusercontent.com/yolodevelopers/clean-stream-filters/master/filter-list.json) is a JSON object containing an array of information for every filter file. It allows filtering services to get a list of all the available filters and to get the URL of the desired filter.
 
@@ -72,7 +72,7 @@ getURLFromID = function (id, filterListFile) {
 }
 ```
 
-###### Retrieving and Parsing the Filters
+#### Retrieving and Parsing the Filters
 
 Below are some functions in Javascript that will get a filter file given its URL and parse it into an array of objects.
 
@@ -169,6 +169,6 @@ When a filter is created, it must be added to the file [filter-list.json](https:
 
 Contributions are welcome and appreciated. Below are listed some of the ways that you can contribute.
 
-#### Create Filters
+### Create Filters
 
-#### Create Filtering Services
+### Create Filtering Services
