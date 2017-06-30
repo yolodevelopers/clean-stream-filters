@@ -26,20 +26,26 @@ The filter list looks something like the following.
 {
 	"filters": [
 		{
-			"url": "https://raw.githubusercontent.com/yolodevelopers/clean-stream-filters/master/test.filter", 
-			"filename": "test.filter", 
-			"title": "Test",
-			"netflix_id": "1234567"
+			"url": "https://raw.githubusercontent.com/yolodevelopers/clean-stream-filters/master/test.filter", //the url of the filter
+			"filename": "test.filter", //the file name of the filter
+			"title": "Test", //the title of the filter
+			"netflix_id": "12345678" //the id that Netflix associates with the movie
 		}, 
 		{
 			"url": "https://raw.githubusercontent.com/yolodevelopers/clean-stream-filters/master/test-2.filter", 
 			"filename": "test2.filter", 
 			"title": "Test 2",
-			"netflix_id": "2234567"
+			"netflix_id": "23456789"
 		}
 	]
 }
 ```
+
+The "netflix_id" value can be found from the last part of the URL while watching the movie on Netflix. For example, if the URL is
+```
+https://www.netflix.com/watch/12345678?trackId=87654321...
+```
+then the ID would be "12345678".
 
 Below is Javascript code showing how to retrieve the list of filters and find the URL of a movie given its Netflix ID.
 
