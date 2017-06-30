@@ -14,9 +14,42 @@ The filters can be used to edit inappropriate content out of movies through serv
 
 Others are welcome to create filtering services that use these filters. The following information shows how to use the filters.
 
+###### The Filter List
+
+The file "filter-list.json" is a JSON object containing an array of information for every filter file. It allows filtering services to get a list of all the available filters and to get the URL of the desired filter.
+
+When a filter is created, it must be added to the list. For more information about adding a filter to the list, see the section "Creating Filters".
+
+Below is Javascript code showing how to retrieve the list of filters and find the URL of a movie given its Netflix ID.
+
+```javascript
+getFilterList = function (callback) {
+	var request = new XMLHttpRequest();
+	request.open('GET', filterListURL, true);
+	request.send(null);
+	request.onreadystatechange = function () {
+		if (request.readyState === 4 && request.status === 200) {
+		var type = request.getResponseHeader('Content-Type');
+			if (type.indexOf("text") !== 1) {
+				callback(JSON.parse(request.responseText));
+			}
+		}
+	}
+}
+
+getURLFromID = function (id, filterListFile) {
+	var filters = filterListFile.filters;
+	for (var i=0; i<filters.length && !exists; i++) {
+		if (filters[i].netflix_id===id) {
+			return fs[i].url;
+		}
+	}
+}
+```
+
 ###### Retrieving and Parsing the Filters
 
-Below are some functions in javascript that will get a filter file given its URL and parse it into an array of objects.
+Below are some functions in Javascript that will get a filter file given its URL and parse it into an array of objects.
 
 ```javascript
 getFilterFileContent = function (url, callback) {
