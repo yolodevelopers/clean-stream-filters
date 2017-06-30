@@ -1,6 +1,8 @@
 # clean-stream-filters
 
-This repository contains filters for editing movies for inappropriate content. These filters are designed to be used with the chrome extension [Clean Stream](https://chrome.google.com/webstore/detail/clean-stream/cppacmdbokpnibcconbcniibodcfgdba) but can be used freely by other filtering services.
+The purpose of this repository is to create and host filters that can be used by movie filtering services to edit inappropriate content out of movies.
+
+These filters are designed to be used with the Chrome extension [Clean Stream](https://chrome.google.com/webstore/detail/clean-stream/cppacmdbokpnibcconbcniibodcfgdba) but can be used freely by other filtering services.
 
 ## Using the Filters
 
@@ -14,7 +16,7 @@ Others are welcome to create filtering services that use these filters. The foll
 
 ###### Retrieving and Parsing the Filters
 
-Below are some functions in javascript that will get a filter file and parse it into an array of objects.
+Below are some functions in javascript that will get a filter file given its URL and parse it into an array of objects.
 
 ```javascript
 getFilterFileContent = function (url, callback) {
