@@ -66,7 +66,7 @@ getFilterList = function (callback) {
 
 getURLFromID = function (id, filterListFile) {
 	var filters = filterListFile.filters;
-	for (var i=0; i<filters.length && !exists; i++) {
+	for (var i=0; i<filters.length; i++) {
 		if (filters[i].netflix_id===id) {
 			return fs[i].url;
 		}
