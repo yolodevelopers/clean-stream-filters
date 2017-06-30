@@ -23,7 +23,22 @@ When a filter is created, it must be added to the list. For more information abo
 The filter list looks something like the following.
 
 ```
-
+{
+	"filters": [
+		{
+			"url": "https://raw.githubusercontent.com/yolodevelopers/clean-stream-filters/master/test.filter", 
+			"filename": "test.filter", 
+			"title": "Test",
+			"netflix_id": "1234567"
+		}, 
+		{
+			"url": "https://raw.githubusercontent.com/yolodevelopers/clean-stream-filters/master/test-2.filter", 
+			"filename": "test2.filter", 
+			"title": "Test 2",
+			"netflix_id": "2234567"
+		}
+	]
+}
 ```
 
 Below is Javascript code showing how to retrieve the list of filters and find the URL of a movie given its Netflix ID.
