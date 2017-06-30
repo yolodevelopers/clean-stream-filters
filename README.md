@@ -10,7 +10,7 @@ The filters can be used to edit inappropriate content out of movies through serv
 
 #### Creating a Filtering Service
 
-Others are welcome to create filtering services that use these filters.
+Others are welcome to create filtering services that use these filters. The following information shows how to use the filters.
 
 ###### Retrieving and Parsing the Filters
 
@@ -58,7 +58,7 @@ parseFilterFileContent = function (ffc) {
 }
 ```
 
-The code below uses the two functions above and prints the results to the console in chrome.
+The code below uses the two functions above and prints the results to the console in Chrome.
 
 ```javascript
 getFilterFileContent("https://raw.githubusercontent.com/yolodevelopers/clean-stream-filters/master/test.filter", function (ffc) {
@@ -103,3 +103,8 @@ endTime
 
 ## Contributing
 
+Contributions are welcome and appreciated. Below are listed some of the ways that you can contribute.
+
+#### Create Filters
+
+#### Create Filtering Services
