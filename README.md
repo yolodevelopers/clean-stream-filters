@@ -163,7 +163,7 @@ endTime
 
 #### Adding Filters to the Filter List
 
-When a filter is created, it must be added to the file [filter-list.json](https://raw.githubusercontent.com/yolodevelopers/clean-stream-filters/master/filter-list.json). For more information about the list, see the section [The Filter List](https://github.com/yolodevelopers/clean-stream-filters/blob/master/README.md#creating-filters). Each filter object must contain a URL, a title, a file name, and if possible a netflix ID.
+When a filter is created, it must be added to the file [filter-list.json](https://raw.githubusercontent.com/yolodevelopers/clean-stream-filters/master/filter-list.json). For more information about the list, see the section [The Filter List](https://github.com/yolodevelopers/clean-stream-filters/blob/master/README.md#the-filter-list). Each filter object must contain a URL, a title, a file name, and if possible a netflix ID.
 
 ## Contributing
 
