@@ -18,8 +18,6 @@ Others are welcome to create filtering services that use these filters. The foll
 
 The file [filter-list.json](https://raw.githubusercontent.com/yolodevelopers/clean-stream-filters/master/filter-list.json) is a JSON object containing an array of information for every filter file. It allows filtering services to get a list of all the available filters and to get the URL of the desired filter.
 
-When a filter is created, it must be added to the list. For more information about adding a filter to the list, see the section [Creating Filters](https://github.com/yolodevelopers/clean-stream-filters/blob/master/README.md#creating-filters).
-
 The filter list looks something like the following.
 
 ```
@@ -162,6 +160,10 @@ startTime
 endTime
 15
 ```
+
+#### Adding Filters to the Filter List
+
+When a filter is created, it must be added to the file [filter-list.json](https://raw.githubusercontent.com/yolodevelopers/clean-stream-filters/master/filter-list.json). For more information about the list, see the section [The Filter List](https://github.com/yolodevelopers/clean-stream-filters/blob/master/README.md#creating-filters). Each filter object must contain a URL, a title, a file name, and if possible a netflix ID.
 
 ## Contributing
 
