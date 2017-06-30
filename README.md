@@ -171,4 +171,4 @@ Contributions are welcome and appreciated. Below are listed some of the ways tha
 
 ### Create Filters
 
-### Create Filtering Services
+If you are interested in contributing you can contribute by making filters for movies that you watch.
