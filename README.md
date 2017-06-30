@@ -18,7 +18,13 @@ Others are welcome to create filtering services that use these filters. The foll
 
 The file [filter-list.json](https://raw.githubusercontent.com/yolodevelopers/clean-stream-filters/master/filter-list.json) is a JSON object containing an array of information for every filter file. It allows filtering services to get a list of all the available filters and to get the URL of the desired filter.
 
-When a filter is created, it must be added to the list. For more information about adding a filter to the list, see the section "Creating Filters".
+When a filter is created, it must be added to the list. For more information about adding a filter to the list, see the section [Creating Filters](https://github.com/yolodevelopers/clean-stream-filters/blob/master/README.md#creating-filters).
+
+The filter list looks something like the following.
+
+```
+
+```
 
 Below is Javascript code showing how to retrieve the list of filters and find the URL of a movie given its Netflix ID.
 
