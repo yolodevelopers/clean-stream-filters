@@ -2,39 +2,17 @@
 
 This repository contains filters for editing movies for inappropriate content. These filters are designed to be used with the chrome extension [Clean Stream](https://chrome.google.com/webstore/detail/clean-stream/cppacmdbokpnibcconbcniibodcfgdba) but can be used freely by other filtering services.
 
-## The .filter File Format
+## Using the Filters
 
-The .filter files are simple text files with the following layout:
+#### Available Filtering Services
 
-```
-title //this indicates that the title of the filter is on the following line
-filter1 //this is the title of the filter
-type //this indicates that the type of the filter is on the following line
-audio //this is the type of filter1. The type can be either "audio" or "audiovisual"
-category //this indicates that the category of the filter is on the following line
-test //this is the category of filter1
-description //this indicates that the description of the filter is on the following line
-This is a test filter.
-startTime //this indicates that the startTime of the filter is on the following line
-3 //this is the start time of filter1
-endTime //this indicates that the endTime of the filter is on the following line
-8 //this is the end time of filter1
+The filters can be used to edit inappropriate content out of movies through services such as Chrome extensions. Currently, these filters are being used by the Chrome extension [Clean Stream](https://chrome.google.com/webstore/detail/clean-stream/cppacmdbokpnibcconbcniibodcfgdba) which can apply the filters to Netflix.
 
-title //the above empty line indicates that the first filter is defined and the next filter has now being defined
-filter2
-type
-audiovisual
-category
-test
-description
-This is a test filter.
-startTime
-10
-endTime
-15
-```
+#### Creating a Filtering Service
 
-## Retrieving and Parsing the Filters
+Others are welcome to create filtering services that use these filters.
+
+###### Retrieving and Parsing the Filters
 
 Below are some functions in javascript that will get a filter file and parse it into an array of objects.
 
@@ -88,3 +66,40 @@ getFilterFileContent("https://raw.githubusercontent.com/yolodevelopers/clean-str
 	console.log(filters);
 });
 ```
+
+## Creating Filters
+
+#### The .filter File Format
+
+The .filter files are simple text files with the following layout:
+
+```
+title //this indicates that the title of the filter is on the following line
+filter1 //this is the title of the filter
+type //this indicates that the type of the filter is on the following line
+audio //this is the type of filter1. The type can be either "audio" or "audiovisual"
+category //this indicates that the category of the filter is on the following line
+test //this is the category of filter1
+description //this indicates that the description of the filter is on the following line
+This is a test filter.
+startTime //this indicates that the startTime of the filter is on the following line
+3 //this is the start time of filter1
+endTime //this indicates that the endTime of the filter is on the following line
+8 //this is the end time of filter1
+
+title //the above empty line indicates that the first filter is defined and the next filter has now being defined
+filter2
+type
+audiovisual
+category
+test
+description
+This is a test filter.
+startTime
+10
+endTime
+15
+```
+
+## Contributing
+
